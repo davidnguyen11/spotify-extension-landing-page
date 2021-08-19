@@ -2,7 +2,7 @@ import React from 'react';
 
 export class Slideshow extends React.Component<Props, State> {
   public static defaultProps: Partial<Props> = {
-    delayMs: 5000,
+    delayMs: 10000,
   };
 
   private timerId: number | null;
