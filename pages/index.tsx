@@ -24,7 +24,7 @@ const Home: NextPage = () => {
     <>
       <Header bgColor={bgColor} textColor={textColor} />
       <main>
-        <div className={`flex flex-col md:flex-row h-96 text-white ${bgColor}`}>
+        <div className={`flex flex-col md:flex-row h-96 text-white ease-in-out duration-500 ${bgColor}`}>
           <div className="mt-10 md:mt-0 md:w-2/4 md:pr-4">
             <div className="font-bold flex flex-col justify-center items-center md:items-end h-full">
               <span className={`text-2xl text-${textColor}`}>Cross-browser</span>
