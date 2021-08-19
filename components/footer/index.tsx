@@ -24,14 +24,16 @@ const data = [
 export const Footer = () => {
   return (
     <footer className="flex flex-col md:flex-row space-x-0 md:mx-64 md:space-x-5 mt-12 border-t border-gray-200 p-5 text-center">
-      {data.map(item => {
+      {data.map((item) => {
         const { href, text } = item;
         return (
           <div key={href}>
-            <a className="block p-1" href={href} target="_blank" rel="noreferrer">{text}</a>
+            <a className="block p-1" href={href} target="_blank" rel="noreferrer">
+              {text}
+            </a>
           </div>
-        )
+        );
       })}
     </footer>
-  )
-}
+  );
+};

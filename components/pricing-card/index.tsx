@@ -22,7 +22,12 @@ export const PricingCard = (props: Props) => {
             </div>
 
             <div className="sm:hidden xl:block">
-              <a href={href} target="_blank" rel="noreferrer" className="bg-spotify-green hover:bg-spotify-dark-green px-8 py-2 rounded">
+              <a
+                href={href}
+                target="_blank"
+                rel="noreferrer"
+                className="bg-spotify-green hover:bg-spotify-dark-green px-8 py-2 rounded"
+              >
                 Install
               </a>
             </div>
@@ -30,5 +35,5 @@ export const PricingCard = (props: Props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

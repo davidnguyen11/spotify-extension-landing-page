@@ -7,9 +7,17 @@ interface Props {
 }
 
 export type BackgroundColor =
-  'green' | 'dark-green' | 'deep-blue' | 'imperial' |
-  'web-gold' | 'yellow-orange' | 'electric-pink' |
-  'byzantine' | 'brilliant-azure' | 'champagne' | 'dark-blue';
+  | 'green'
+  | 'dark-green'
+  | 'deep-blue'
+  | 'imperial'
+  | 'web-gold'
+  | 'yellow-orange'
+  | 'electric-pink'
+  | 'byzantine'
+  | 'brilliant-azure'
+  | 'champagne'
+  | 'dark-blue';
 
 export const ScreenShot = (props: Props) => {
   const { imgSrc, imgTitle, children, reverse, bgColor } = props;
@@ -20,9 +28,7 @@ export const ScreenShot = (props: Props) => {
 
   let leftNode = (
     <div className="md:flex-auto md:pr-4">
-      <div className="font-bold flex flex-col justify-center items-center md:items-end h-full">
-        {children}
-      </div>
+      <div className="font-bold flex flex-col justify-center items-center md:items-end h-full">{children}</div>
     </div>
   );
 
@@ -41,14 +47,11 @@ export const ScreenShot = (props: Props) => {
           <img src={imgSrc} alt={imgTitle} />
         </div>
       </div>
-
     );
 
     rightNode = (
       <div className="md:flex-auto md:pl-4">
-        <div className="font-bold flex flex-col justify-center items-center md:items-start h-full">
-          {children}
-        </div>
+        <div className="font-bold flex flex-col justify-center items-center md:items-start h-full">{children}</div>
       </div>
     );
   }
@@ -59,4 +62,4 @@ export const ScreenShot = (props: Props) => {
       {rightNode}
     </div>
   );
-}
+};

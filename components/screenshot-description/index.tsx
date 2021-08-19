@@ -18,10 +18,13 @@ export const ScreenShotDescription = (props: Props) => {
       <div className="text-lg md:text-3xl">
         <span className={textColor}>{subHeading}</span>
       </div>
-      {postText &&
+      {postText && (
         <div className={`hidden md:flex md:flex-col text-md font-normal italic text-${alignText}`}>
-          {postText.map((text, index) => <div key={`post_text_${index}`}>{text}</div>)}
-        </div>}
+          {postText.map((text, index) => (
+            <div key={`post_text_${index}`}>{text}</div>
+          ))}
+        </div>
+      )}
     </>
-  )
-}
+  );
+};

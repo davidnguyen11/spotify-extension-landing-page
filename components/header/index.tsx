@@ -1,12 +1,12 @@
-import { Disclosure } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import { Disclosure } from '@headlessui/react';
+import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
 const navigation = [
   { name: 'How does it look like?', href: '#how-does-it-look-like', current: false },
   { name: 'Installation', href: '#installation', current: false },
   { name: 'Buy me a coffee', href: '#buy-me-a-coffee', current: false },
   { name: 'Follow me', href: 'https://twitter.com/davidnguyen1791', current: false },
-]
+];
 
 interface Props {
   bgColor?: string;
@@ -14,7 +14,7 @@ interface Props {
 }
 
 function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(' ');
 }
 
 export function Header(props: Props) {
@@ -26,7 +26,6 @@ export function Header(props: Props) {
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between h-16">
-
               <div className="flex-1 flex items-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
                   <img
@@ -34,9 +33,7 @@ export function Header(props: Props) {
                     src="/spotify-extension-64x64.png"
                     alt="Spotify Exntesion"
                   />
-                  <span className={`ml-4 font-bold text-lg text-${textColor}`}>
-                    Spotify Extension
-                  </span>
+                  <span className={`ml-4 font-bold text-lg text-${textColor}`}>Spotify Extension</span>
                 </div>
               </div>
 
@@ -93,5 +90,5 @@ export function Header(props: Props) {
         </>
       )}
     </Disclosure>
-  )
+  );
 }

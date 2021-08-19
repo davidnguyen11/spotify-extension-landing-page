@@ -24,7 +24,7 @@ export const data: Data[] = [
     reverse: false,
     color: 'green',
     textColor: 'black',
-    text: ['Allow controlling volume', 'Dynamic background color']
+    text: ['Allow controlling volume', 'Dynamic background color'],
   },
   {
     src: '/images/faded-zhu.png',
@@ -33,7 +33,7 @@ export const data: Data[] = [
     reverse: true,
     color: 'deep-blue',
     textColor: 'white',
-    text: ['Easily turn on/off repeat mode']
+    text: ['Easily turn on/off repeat mode'],
   },
   {
     src: '/images/coming-home-datmaniac.png',
@@ -89,7 +89,6 @@ export const data: Data[] = [
   },
 ];
 
-
 export const stores: StoreInfo[] = [
   {
     image: '/stores/chrome.png',
@@ -105,5 +104,5 @@ export const stores: StoreInfo[] = [
     image: '/stores/edge.png',
     title: 'Edge',
     href: 'https://microsoftedge.microsoft.com/addons/detail/spotify-player/odplfjpibjdajlmaocmfmlcdidldlmnk',
-  }
+  },
 ];
