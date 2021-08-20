@@ -16,6 +16,8 @@ interface StoreInfo {
   href: string;
 }
 
+export const GA_TRACKING_ID = 'UA-147652451-2';
+
 export const data: Data[] = [
   {
     src: '/images/dew-kupla.png',
