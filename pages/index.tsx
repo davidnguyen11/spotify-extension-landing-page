@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import type { NextPage } from 'next';
+import Head from 'next/head';
 
 import { Header } from '../components/header';
 import { Footer } from '../components/footer';
@@ -7,7 +8,12 @@ import { Slideshow } from '../components/slideshow';
 import { ScreenShot } from '../components/screenshot';
 import { ScreenShotDescription } from '../components/screenshot-description';
 import { PricingCard } from '../components/pricing-card';
-import { data, stores } from '../utils/constants';
+import { data, stores, HOST } from '../utils/constants';
+
+const TITLE = 'Spotify Web Extension';
+const DESCRIPTION =
+  'The Spotify web extension player that allows the user seamlessly play/pause/like or jump to previous or next track while surfing the web without having to navigate to the Spotify user interface';
+const IMAGE = 'logo.png';
 
 const Home: NextPage = () => {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -22,6 +28,21 @@ const Home: NextPage = () => {
 
   return (
     <>
+      <Head>
+        <title>{TITLE}</title>
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <meta name="title" content={TITLE} />
+        <meta name="description" content={DESCRIPTION} />
+
+        <meta property="og:url" content={HOST} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={TITLE} />
+        <meta property="og:description" content={DESCRIPTION} />
+        <meta property="og:image" content={`${HOST}/${IMAGE}`} />
+
+        <meta name="twitter:title" content={TITLE} />
+        <meta name="twitter:description" content={DESCRIPTION} />
+      </Head>
       <Header bgColor={bgColor} textColor={textColor} />
       <main>
         <div className={`flex flex-col md:flex-row h-96 text-white ease-in-out duration-500 ${bgColor}`}>

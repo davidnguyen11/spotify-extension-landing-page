@@ -16,6 +16,8 @@ interface StoreInfo {
   href: string;
 }
 
+export const HOST = 'https://spotify-extension.netlify.app';
+
 export const GA_TRACKING_ID = 'UA-147652451-2';
 
 export const data: Data[] = [
