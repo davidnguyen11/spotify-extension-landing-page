@@ -1,5 +1,7 @@
 import type { BackgroundColor } from '../components/screenshot';
 
+type TextColor = BackgroundColor;
+
 interface Data {
   src: string;
   title: string;
@@ -7,6 +9,7 @@ interface Data {
   reverse: boolean;
   color: BackgroundColor;
   textColor?: 'white' | 'black';
+  spotifyTextColor?: TextColor;
   text?: string[];
 }
 
@@ -27,6 +30,7 @@ export const data: Data[] = [
     category: '🎶 Music',
     reverse: false,
     color: 'green',
+    spotifyTextColor: 'deep-blue',
     textColor: 'black',
     text: ['Allow controlling volume', 'Dynamic background color'],
   },
@@ -36,6 +40,7 @@ export const data: Data[] = [
     category: '🎶 Music',
     reverse: true,
     color: 'deep-blue',
+    spotifyTextColor: 'web-gold',
     textColor: 'white',
     text: ['Easily turn on/off repeat mode'],
   },
@@ -45,6 +50,7 @@ export const data: Data[] = [
     category: '🎶 Music',
     reverse: false,
     color: 'web-gold',
+    spotifyTextColor: 'brilliant-azure',
     textColor: 'black',
     text: ['Easy to jump to next', 'or previous songs'],
   },
@@ -54,6 +60,7 @@ export const data: Data[] = [
     category: '🎙 Podcast',
     reverse: true,
     color: 'brilliant-azure',
+    spotifyTextColor: 'yellow-orange',
     textColor: 'black',
     text: ['Allow listening podcasts'],
   },
@@ -63,6 +70,7 @@ export const data: Data[] = [
     category: '🎙 Podcast',
     reverse: false,
     color: 'yellow-orange',
+    spotifyTextColor: 'electric-pink',
     textColor: 'black',
     text: ['And control your podcasts'],
   },
@@ -72,6 +80,7 @@ export const data: Data[] = [
     category: '🔎 Search your song',
     reverse: true,
     color: 'electric-pink',
+    spotifyTextColor: 'imperial',
     textColor: 'white',
     text: ['Searching is so easy', 'Highlight a text', 'Right click and search'],
   },
@@ -80,6 +89,7 @@ export const data: Data[] = [
     title: 'Sign in',
     reverse: false,
     color: 'imperial',
+    spotifyTextColor: 'champagne',
     textColor: 'white',
     text: ['with your Spotify account'],
   },
@@ -88,6 +98,7 @@ export const data: Data[] = [
     title: 'App not running',
     reverse: true,
     color: 'champagne',
+    spotifyTextColor: 'dark-green',
     textColor: 'black',
     text: ['Always turn on Spotify desktop app'],
   },

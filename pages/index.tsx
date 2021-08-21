@@ -24,6 +24,7 @@ const Home: NextPage = () => {
 
   const currentElement = data[slideIndex];
   const bgColor = `bg-spotify-${currentElement.color}`;
+  const spotifyTextColor = `text-spotify-${currentElement.spotifyTextColor}`;
   const textColor = `${currentElement.textColor}`;
 
   return (
@@ -50,7 +51,7 @@ const Home: NextPage = () => {
             <div className="font-bold flex flex-col justify-center items-center md:items-end h-full">
               <span className={`text-2xl text-${textColor}`}>Cross-browser</span>
               <div className="text-3xl">
-                <span className="text-spotify-dark-green">Spotify</span>{' '}
+                <span className={spotifyTextColor}>Spotify</span>{' '}
                 <span className={`text-${textColor}`}>extension</span>
               </div>
 
