@@ -17,6 +17,16 @@ interface StoreInfo {
   image: string;
   title: string;
   href: string;
+  downloads: string;
+}
+
+type Navigation = { [key in NavigationKey]: NavigationItem };
+
+type NavigationKey = 'motivation' | 'whatDoesItLookLike' | 'installation' | 'buyMeACoffee';
+
+interface NavigationItem {
+  text: string;
+  id: string;
 }
 
 export const HOST = 'https://spotify-extension.netlify.app';
@@ -32,7 +42,7 @@ export const data: Data[] = [
     color: 'green',
     spotifyTextColor: 'deep-blue',
     textColor: 'black',
-    text: ['Allow controlling volume', 'Dynamic background color'],
+    text: ['Features dynamic background color', 'with volume control'],
   },
   {
     src: '/images/faded-zhu.png',
@@ -52,7 +62,7 @@ export const data: Data[] = [
     color: 'web-gold',
     spotifyTextColor: 'brilliant-azure',
     textColor: 'black',
-    text: ['Easy to jump to next', 'or previous songs'],
+    text: ['Easily jump to next or previous songs'],
   },
   {
     src: '/images/behind-the-tech.png',
@@ -62,7 +72,7 @@ export const data: Data[] = [
     color: 'brilliant-azure',
     spotifyTextColor: 'yellow-orange',
     textColor: 'black',
-    text: ['Allow listening podcasts'],
+    text: ['Enjoy your favorite podcasts as well as music'],
   },
   {
     src: '/images/joe-rogan-podcast.png',
@@ -109,15 +119,37 @@ export const stores: StoreInfo[] = [
     image: '/stores/chrome.png',
     title: 'Chrome',
     href: 'https://chrome.google.com/webstore/detail/spotify-player/bhdjjppbnlpjpeicimhemencfgjeldoa',
+    downloads: '10k+',
   },
   {
     image: '/stores/firefox.png',
     title: 'Firefox',
     href: 'https://addons.mozilla.org/en-US/firefox/addon/spotify-player/',
+    downloads: '800+',
   },
   {
     image: '/stores/edge.png',
     title: 'Edge',
     href: 'https://microsoftedge.microsoft.com/addons/detail/spotify-player/odplfjpibjdajlmaocmfmlcdidldlmnk',
+    downloads: '3k+',
   },
 ];
+
+export const NAVIGATION: Navigation = {
+  motivation: {
+    text: 'Motivation',
+    id: 'motivation',
+  },
+  whatDoesItLookLike: {
+    text: 'What does it look like?',
+    id: 'what-does-it-look-like',
+  },
+  installation: {
+    text: 'Installation',
+    id: 'installation',
+  },
+  buyMeACoffee: {
+    text: 'Buy me a coffee',
+    id: 'buy-me-a-coffee',
+  }
+};

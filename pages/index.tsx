@@ -8,12 +8,14 @@ import { Slideshow } from '../components/slideshow';
 import { ScreenShot } from '../components/screenshot';
 import { ScreenShotDescription } from '../components/screenshot-description';
 import { PricingCard } from '../components/pricing-card';
-import { data, stores, HOST } from '../utils/constants';
+import { data, stores, NAVIGATION, HOST } from '../utils/constants';
 
 const TITLE = 'Spotify Web Extension';
 const DESCRIPTION =
   'The Spotify web extension player that allows the user seamlessly play/pause/like or jump to previous or next track while surfing the web without having to navigate to the Spotify user interface';
 const IMAGE = 'logo.png';
+
+const { motivation, whatDoesItLookLike, installation, buyMeACoffee } = NAVIGATION;
 
 const Home: NextPage = () => {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -79,7 +81,7 @@ const Home: NextPage = () => {
         <div className="flex flex-col items-center md:space-x-4 mt-16 md:mt-28">
           <div className="md:max-w-screen-md px-4">
             <div className="text-center text-2xl md:text-3xl">
-              <strong>Motivation</strong>
+              <strong>{motivation.text}</strong>
             </div>
             <div className="text-lg mt-10">
               When we are working or just browsing it is inconvenient to have to switch to another window to play/pause
@@ -94,8 +96,8 @@ const Home: NextPage = () => {
         </div>
 
         <div className="flex flex-col items-center md:space-x-4 mt-16 md:mt-28">
-          <div id="how-does-it-look-like" className="text-center text-2xl md:text-3xl">
-            <strong>How does it look like?</strong>
+          <div id={whatDoesItLookLike.id} className="text-center text-2xl md:text-3xl">
+            <strong>{whatDoesItLookLike.text}</strong>
           </div>
         </div>
 
@@ -115,24 +117,24 @@ const Home: NextPage = () => {
         })}
 
         <div className="flex flex-col items-center md:space-x-4 mt-16 md:mt-28">
-          <div id="installation" className="text-center text-2xl md:text-3xl">
-            <strong>Installation</strong>
+          <div id={installation.id} className="text-center text-2xl md:text-3xl">
+            <strong>{installation.text}</strong>
           </div>
         </div>
 
         <div className="text-center mt-10">
           <div className="flex flex-col justify-center md:flex-row md:mx-64 md:space-x-5">
             {stores.map((item) => {
-              const { image, title, href } = item;
-              return <PricingCard key={title} src={image} title={title} href={href} />;
+              const { image, title, href, downloads } = item;
+              return <PricingCard key={title} src={image} title={title} href={href} downloads={downloads} />;
             })}
           </div>
         </div>
 
         <div className="flex flex-col items-center md:space-x-4 my-16 md:my-28">
           <div className="md:max-w-screen-md px-4">
-            <div id="buy-me-a-coffee" className="text-center text-2xl md:text-3xl">
-              <strong>Buy me a coffee ☕️</strong>
+            <div id={buyMeACoffee.id} className="text-center text-2xl md:text-3xl">
+              <strong>{buyMeACoffee.text} ☕️</strong>
             </div>
             <div className="flex flex-col text-lg text-center mt-10">
               <div>I work so hard to make this product free for everyone.</div>

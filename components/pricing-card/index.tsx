@@ -2,10 +2,11 @@ interface Props {
   title: string;
   src: string;
   href: string;
+  downloads: string;
 }
 
 export const PricingCard = (props: Props) => {
-  const { title, src, href } = props;
+  const { title, src, href, downloads } = props;
 
   return (
     <div className="relative sm:max-w-none">
@@ -15,11 +16,16 @@ export const PricingCard = (props: Props) => {
             <div>
               <strong>{title}</strong>
               <div className="font-medium mb-10 sm:mb-8 lg:mb-10 mt-5">
-                <span className="flex items-center justify-center">
+                <span className="flex items-center justify-center lg:mb-5">
                   <img className="w-36" src={src} alt={title} />
                 </span>
+                <div className="mt-5">
+                  <span className="text-3xl">{downloads}</span>
+                  <i> downloads</i>
+                </div>
               </div>
             </div>
+
 
             <div className="sm:hidden xl:block">
               <a

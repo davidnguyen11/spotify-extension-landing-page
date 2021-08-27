@@ -1,5 +1,6 @@
 import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import { NAVIGATION } from '../../utils/constants';
 
 interface Props {
   bgColor?: string;
@@ -12,6 +13,7 @@ function classNames(...classes: string[]) {
 
 export function Header(props: Props) {
   const { bgColor, textColor } = props;
+  const { whatDoesItLookLike, installation, buyMeACoffee } = NAVIGATION
 
   const svgStyle = {
     fill: textColor === 'black' ? '#000' : '#fff'
@@ -19,16 +21,16 @@ export function Header(props: Props) {
 
   const navigation = [
     {
-      name: 'How does it look like?',
-      href: '#how-does-it-look-like',
+      name: whatDoesItLookLike.text,
+      href: `#${whatDoesItLookLike.id}`,
       current: false,
       icon: (
         <svg style={svgStyle} className="inline-block mr-1" width={15} height={15} viewBox="0 0 24 24"><g><g><path d="m6.25 19.5c-1.601 0-3.025-1.025-3.542-2.551l-.035-.115c-.122-.404-.173-.744-.173-1.084v-6.818l-2.426 8.098c-.312 1.191.399 2.426 1.592 2.755l15.463 4.141c.193.05.386.074.576.074.996 0 1.906-.661 2.161-1.635l.901-2.865z" /></g><path d="m9 9c1.103 0 2-.897 2-2s-.897-2-2-2-2 .897-2 2 .897 2 2 2z" /></g><path d="m21.5 2h-15c-1.378 0-2.5 1.122-2.5 2.5v11c0 1.378 1.122 2.5 2.5 2.5h15c1.378 0 2.5-1.122 2.5-2.5v-11c0-1.378-1.122-2.5-2.5-2.5zm-15 2h15c.276 0 .5.224.5.5v7.099l-3.159-3.686c-.335-.393-.82-.603-1.341-.615-.518.003-1.004.233-1.336.631l-3.714 4.458-1.21-1.207c-.684-.684-1.797-.684-2.48 0l-2.76 2.759v-9.439c0-.276.224-.5.5-.5z" /></svg>
       )
     },
     {
-      name: 'Installation',
-      href: '#installation',
+      name: installation.text,
+      href: `#${installation.id}`,
       current: false,
       icon: (
         <svg style={svgStyle} className="inline-block mr-1" width={15} height={15} viewBox="0 0 451.111 451.111">
@@ -38,8 +40,8 @@ export function Header(props: Props) {
       )
     },
     {
-      name: 'Buy me a coffee',
-      href: '#buy-me-a-coffee',
+      name: buyMeACoffee.text,
+      href: `#${buyMeACoffee.id}`,
       current: false,
       icon: (
         <svg style={svgStyle} className="inline-block mr-1" width={15} height={15} x="0px" y="0px" viewBox="0 0 511.999 511.999">
