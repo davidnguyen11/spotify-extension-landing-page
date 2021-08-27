@@ -16,7 +16,7 @@ const data = [
     text: 'Buy me a coffee ☕️',
   },
   {
-    href: 'https://github.com/davidnguyen179/spotify-extension-issue/issues',
+    href: 'https://github.com/davidnguyen179/spotify-extension-landing-page/issues',
     text: 'Bug report 🐞',
   },
 ];
