@@ -40,7 +40,7 @@ When we are working or just browsing it is inconvenient to have to switch to ano
 | Firefox        | [https://addons.mozilla.org/en-US/firefox/addon/spotify-player](https://addons.mozilla.org/en-US/firefox/addon/spotify-player)                                                                         |
 | Opera          | [https://addons.opera.com/en/extensions/details/spotify-player/](https://addons.opera.com/en/extensions/details/spotify-player/)                                                                       |
 
-## How it looks like?
+## What does it looks like?
 
 ![Spotify extension demo](https://user-images.githubusercontent.com/6290720/112152408-9cf65500-8c25-11eb-82f9-2429a9fa587c.gif)
 
@@ -71,84 +71,6 @@ When we are working or just browsing it is inconvenient to have to switch to ano
 Search song by name with Chrome's context menu
 
 <img width="546" alt="Screen Shot 2021-04-18 at 18 24 55" src="https://user-images.githubusercontent.com/6290720/115140690-86e88280-a073-11eb-8aeb-d24db2394320.png">
-
-## Development
-
-```bash
-npm i
-```
-
-**Chrome**
-
-```bash
-npm run app:chrome-dev
-```
-
-**Edge & Opera**
-
-```bash
-npm run app:edge-dev
-```
-
-**Firefox**
-
-```bash
-npm run app:firefox-dev
-```
-
-## Production
-
-```bash
-npm i
-```
-
-**Chrome**
-
-```bash
-npm run app:chrome
-```
-
-**Edge & Opera**
-
-```bash
-npm run app:edge
-```
-
-**Firefox**
-
-```bash
-npm run app:firefox
-```
-
-## Load package to Chrome
-
-1. On the browser's URL address bar
-2. Enter `chrome://extensions/`
-3. Switch to "**Developer mode**"
-4. Load extension by clicking "**Load unpacked**"
-5. Browse to `dist/` in source code
-6. Done!
-
-Check here for more detail: [https://developer.chrome.com/extensions/getstarted](https://developer.chrome.com/extensions/getstarted)
-
-## Load package to Edge
-
-1. On the browser's URL address bar
-2. Enter `edge://extensions/`
-3. Turn on `Developer mode`
-4. Load extension by clicking "**Load unpacked**"
-5. Browse to `dist/` in source code
-6. Done!
-
-## Load package to Firefox
-
-1. On the browser's URL address bar
-2. Enter `about:debugging#/runtime/this-firefox`
-3. Click **Load Temporary Add-on...**
-4. Browser to your `manifest.json` & click **Open**
-5. Done!
-
-Check here for more detail: [https://extensionworkshop.com/documentation/develop/temporary-installation-in-firefox/](https://extensionworkshop.com/documentation/develop/temporary-installation-in-firefox/)
 
 ## Contributors ✨
 
