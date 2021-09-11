@@ -1,4 +1,4 @@
 user-agent: *
 allow: *
 
-sitemap: https://spotify-extension.netlify.app/sitemap.xml
+sitemap: https://www.spotit.page/sitemap.xml

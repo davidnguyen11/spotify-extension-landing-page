@@ -10,9 +10,9 @@ import { ScreenShotDescription } from '../components/screenshot-description';
 import { PricingCard } from '../components/pricing-card';
 import { data, stores, NAVIGATION, HOST } from '../utils/constants';
 
-const TITLE = 'Spotify Web Extension';
+const TITLE = 'Spotit - A music extension compatible with Spotify';
 const DESCRIPTION =
-  'The Spotify web extension player that allows the user seamlessly play/pause/like or jump to previous or next track while surfing the web without having to navigate to the Spotify user interface';
+  'The Spotit is a music extension compatible with Spotify that allows the user seamlessly play/pause/like or jump to previous or next track while surfing the web without having to navigate to the Spotify user interface';
 const IMAGE = 'logo.png';
 
 const { motivation, whatDoesItLookLike, installation, buyMeACoffee } = NAVIGATION;
