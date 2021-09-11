@@ -1,7 +1,7 @@
 interface Props {
   imgSrc: string;
   imgTitle: string;
-  bgColor: BackgroundColor;
+  bgColor?: BackgroundColor;
   children: React.ReactNode;
   reverse?: boolean;
 }
@@ -20,9 +20,7 @@ export type BackgroundColor =
   | 'dark-blue';
 
 export const ScreenShot = (props: Props) => {
-  const { imgSrc, imgTitle, children, reverse, bgColor } = props;
-
-  const backgroundColor = `bg-spotify-${bgColor}`;
+  const { imgSrc, imgTitle, children } = props;
 
   let rootStyle = `flex flex-col md:flex-row md:space-x-4 mt-10`;
 
@@ -33,28 +31,10 @@ export const ScreenShot = (props: Props) => {
   );
 
   let rightNode = (
-    <div className={`md:flex-auto ${backgroundColor}`}>
+    <div className={`md:flex-auto p-7`}>
       <img src={imgSrc} alt={imgTitle} />
     </div>
   );
-
-  if (reverse) {
-    rootStyle = `${rootStyle} flex-col-reverse`;
-
-    leftNode = (
-      <div className={`md:flex-auto ${backgroundColor}`}>
-        <div className="font-bold flex flex-col justify-center items-center md:items-end h-full">
-          <img src={imgSrc} alt={imgTitle} />
-        </div>
-      </div>
-    );
-
-    rightNode = (
-      <div className="md:flex-auto md:pl-4">
-        <div className="font-bold flex flex-col justify-center items-center md:items-start h-full">{children}</div>
-      </div>
-    );
-  }
 
   return (
     <div className={rootStyle}>

@@ -26,7 +26,6 @@ export const PricingCard = (props: Props) => {
               </div>
             </div>
 
-
             <div className="sm:hidden xl:block">
               <a
                 href={href}
