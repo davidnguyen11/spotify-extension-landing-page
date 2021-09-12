@@ -131,7 +131,7 @@ export const stores: StoreInfo[] = [
     image: '/stores/edge.png',
     title: 'Edge',
     href: 'https://microsoftedge.microsoft.com/addons/detail/spotify-player/odplfjpibjdajlmaocmfmlcdidldlmnk',
-    downloads: '3k+',
+    downloads: '4k+',
   },
 ];
 
@@ -151,5 +151,5 @@ export const NAVIGATION: Navigation = {
   buyMeACoffee: {
     text: 'Buy me a coffee',
     id: 'buy-me-a-coffee',
-  }
+  },
 };
