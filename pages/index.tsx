@@ -25,8 +25,8 @@ const Home: NextPage = () => {
   };
 
   const currentElement = data[slideIndex];
-  const bgColor = `bg-spotify-${currentElement.color}`;
-  const spotifyTextColor = `text-spotify-${currentElement.spotifyTextColor}`;
+  const bgColor = `bg-${currentElement.color}`;
+  const spotifyTextColor = `bg-${currentElement.spotifyTextColor}`;
   const textColor = `${currentElement.textColor}`;
 
   return (
@@ -52,9 +52,9 @@ const Home: NextPage = () => {
           <div className="mt-10 md:mt-0 md:w-2/4 md:pr-4">
             <div className="font-bold flex flex-col justify-center items-center md:items-end h-full">
               <span className={`text-2xl text-${textColor}`}>Cross-browser</span>
-              <div className="text-3xl">
-                <span className={spotifyTextColor}>Spotify</span>{' '}
-                <span className={`text-${textColor}`}>extension</span>
+              <div>
+                <span className={`text-4xl bg-clip-text text-transparent ${spotifyTextColor}`}>Spotify</span>{' '}
+                <span className={`text-3xl text-${textColor}`}>extension</span>
               </div>
 
               <a href="#installation" className="bg-gray-500 hover:bg-gray-600 block px-7 text-white py-2 mt-6 rounded">
@@ -80,8 +80,8 @@ const Home: NextPage = () => {
 
         <div className="flex flex-col items-center md:space-x-4 mt-16 md:mt-28">
           <div className="md:max-w-screen-md px-4">
-            <div className="text-center text-2xl md:text-3xl">
-              <strong>{motivation.text}</strong>
+            <div className={`text-center text-3xl md:text-4xl`}>
+              <strong className="bg-clip-text text-transparent bg-night">{motivation.text}</strong>
             </div>
             <div className="text-lg mt-10">
               When we are working or just browsing it is inconvenient to have to switch to another window to play/pause
@@ -96,8 +96,8 @@ const Home: NextPage = () => {
         </div>
 
         <div className="flex flex-col items-center md:space-x-4 mt-16 md:mt-28">
-          <div id={whatDoesItLookLike.id} className="text-center text-2xl md:text-3xl">
-            <strong>{whatDoesItLookLike.text}</strong>
+          <div id={whatDoesItLookLike.id} className={`text-center text-3xl md:text-4xl`}>
+            <strong className="bg-clip-text text-transparent bg-pink1">{whatDoesItLookLike.text}</strong>
           </div>
         </div>
 
@@ -117,8 +117,8 @@ const Home: NextPage = () => {
         })}
 
         <div className="flex flex-col items-center md:space-x-4 mt-16 md:mt-28">
-          <div id={installation.id} className="text-center text-2xl md:text-3xl">
-            <strong>{installation.text}</strong>
+          <div id={installation.id} className={`text-center text-3xl md:text-4xl`}>
+            <strong className="bg-clip-text text-transparent bg-purple1">{installation.text}</strong>
           </div>
         </div>
 
@@ -133,8 +133,9 @@ const Home: NextPage = () => {
 
         <div className="flex flex-col items-center md:space-x-4 my-16 md:my-28">
           <div className="md:max-w-screen-md px-4">
-            <div id={buyMeACoffee.id} className="text-center text-2xl md:text-3xl">
-              <strong>{buyMeACoffee.text} ☕️</strong>
+            <div id={buyMeACoffee.id} className={`text-center text-3xl md:text-4xl`}>
+              <strong className="bg-clip-text text-transparent bg-deep-blue">{buyMeACoffee.text}</strong>
+              <span> ☕️</span>
             </div>
             <div className="flex flex-col text-lg text-center mt-10">
               <div>I work so hard to make this product free for everyone.</div>

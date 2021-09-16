@@ -1,17 +1,19 @@
 const colors = {
-  'spotify-dark-blue': '#1f2937',
-  'spotify-green': '#19e68d',
-  'spotify-dark-green': '#14b870',
-  'spotify-deep-blue': '#1c2963',
-  'spotify-light-deep-blue': '#495382',
-  'spotify-imperial': '#5C1D6B',
-  'spotify-web-gold': '#FDD602',
-  'spotify-dark-web-gold': '#e3c001',
-  'spotify-yellow-orange': '#FFA64C',
-  'spotify-electric-pink': '#FF3179',
-  'spotify-byzantine': '#B41EB2',
-  'spotify-brilliant-azure': '#38A6F3',
-  'spotify-champagne': '#F6E2CB',
+  pink: 'linear-gradient(90deg, #fbe3e7 0%, #edd8e4 27%, #decbe2 100%)',
+  metapolis: 'linear-gradient(to right, #659999, #f4791f)',
+  green: 'linear-gradient(to left, #d9dcac 0%, #a5d6a7 100%)',
+  champagne: 'linear-gradient(to right, #fec6ad 0%, #ffd6ac 47%, #ffebbd 100%)',
+  orange: 'linear-gradient(to left, #ff8008, #ffc837)',
+  atlas: 'linear-gradient(to right, #feac5e, #c779d0, #4bc0c8)',
+  almost: 'linear-gradient(to right, #ddd6f3, #faaca8)',
+  evening: 'linear-gradient(to right, #b92b27, #1565c0)',
+  purple: 'linear-gradient(to left, #cc2b5e, #753a88)',
+  deepSea: 'linear-gradient(to right, #2c3e50, #4ca1af)',
+  blush: 'linear-gradient(to right, #b24592, #f15f79)',
+  night: 'linear-gradient(90deg, #2e4f8b 0%, #3e589d 35%, #8f619b 60%, #d0718f 70%)',
+  pink1: 'linear-gradient(150deg, #e436ff, #ff5bae)',
+  purple1: 'linear-gradient(150deg, #702bfc, #b730ff)',
+  'deep-blue': 'linear-gradient(57deg, #1cafb3, #2390c5)',
 }
 
 module.exports = {
@@ -23,10 +25,9 @@ module.exports = {
       ...theme('colors'),
       ...colors,
     }),
-    backgroundColor: (theme) => ({
-      ...theme('colors'),
-      ...colors,
-    }),
+    backgroundImage: {
+      ...colors
+    }
   },
   variants: {
     extend: {},

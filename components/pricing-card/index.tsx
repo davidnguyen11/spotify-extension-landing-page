@@ -32,7 +32,7 @@ export const PricingCard = (props: Props) => {
                 href={href}
                 target="_blank"
                 rel="noreferrer"
-                className="bg-spotify-green hover:bg-spotify-dark-green px-8 py-2 rounded"
+                className="bg-purple1 text-white px-8 py-2 rounded"
               >
                 Install
               </a>

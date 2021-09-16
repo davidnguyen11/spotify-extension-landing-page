@@ -7,22 +7,22 @@ interface Props {
 }
 
 export type BackgroundColor =
+  | 'pink'
+  | 'metapolis'
   | 'green'
-  | 'dark-green'
-  | 'deep-blue'
-  | 'imperial'
-  | 'web-gold'
-  | 'yellow-orange'
-  | 'electric-pink'
-  | 'byzantine'
-  | 'brilliant-azure'
   | 'champagne'
-  | 'dark-blue';
+  | 'orange'
+  | 'atlas'
+  | 'almost'
+  | 'evening'
+  | 'purple'
+  | 'deepSea'
+  | 'blush';
 
 export const ScreenShot = (props: Props) => {
   const { imgSrc, imgTitle, children, reverse, bgColor } = props;
 
-  const backgroundColor = `bg-spotify-${bgColor}`;
+  const backgroundColor = `bg-${bgColor}`;
 
   let rootStyle = `flex flex-col md:flex-row md:space-x-4 mt-10`;
 

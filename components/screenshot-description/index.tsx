@@ -10,13 +10,13 @@ interface Props {
 
 export const ScreenShotDescription = (props: Props) => {
   const { heading, subHeading, color, postText, alignText } = props;
-  const textColor = `text-spotify-${color}`;
+  const bgImage = `bg-${color}`;
 
   return (
     <>
       {heading && <span className="text-lg md:text-2xl">{heading}</span>}
       <div className="text-lg md:text-3xl">
-        <span className={textColor}>{subHeading}</span>
+        <span className={`bg-clip-text text-transparent ${bgImage}`}>{subHeading}</span>
       </div>
       {postText && (
         <div className={`hidden md:flex md:flex-col text-md font-normal italic text-${alignText}`}>
