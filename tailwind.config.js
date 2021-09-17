@@ -14,6 +14,7 @@ const colors = {
   pink1: 'linear-gradient(150deg, #e436ff, #ff5bae)',
   purple1: 'linear-gradient(150deg, #702bfc, #b730ff)',
   'deep-blue': 'linear-gradient(57deg, #1cafb3, #2390c5)',
+
 }
 
 module.exports = {
@@ -24,6 +25,11 @@ module.exports = {
     textColor: (theme) => ({
       ...theme('colors'),
       ...colors,
+    }),
+    backgroundColor: (theme) => ({
+      ...theme('colors'),
+      'web-gold': 'rgba(255, 215, 0, 1)',
+      'web-gold-900': 'rgb(255, 215, 0, 0.8)',
     }),
     backgroundImage: {
       ...colors

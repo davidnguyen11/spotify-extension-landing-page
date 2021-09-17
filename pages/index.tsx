@@ -144,7 +144,7 @@ const Home: NextPage = () => {
 
               <div className="mt-5">
                 <a
-                  className="bg-spotify-web-gold hover:bg-spotify-dark-web-gold px-8 py-3 mt-5 rounded"
+                  className="bg-web-gold hover:bg-web-gold-900 px-8 py-3 mt-5 rounded"
                   target="_blank"
                   rel="noreferrer"
                   href="https://www.paypal.com/paypalme/davidnguyen179"
