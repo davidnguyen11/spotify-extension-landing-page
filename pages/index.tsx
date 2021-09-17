@@ -57,7 +57,7 @@ const Home: NextPage = () => {
                 <span className={`text-3xl text-${textColor}`}>extension</span>
               </div>
 
-              <a href="#installation" className="bg-gray-500 hover:bg-gray-600 block px-7 text-white py-2 mt-6 rounded">
+              <a href="#installation" className={`${spotifyTextColor} shadow-md block px-7 text-white py-2 mt-6 rounded`}>
                 Install
               </a>
             </div>
