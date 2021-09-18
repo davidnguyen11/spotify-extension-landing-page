@@ -1,15 +1,16 @@
 import { useState } from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image'
+import Image from 'next/image';
 
 import { Header } from '../components/header';
 import { Footer } from '../components/footer';
 import { Slideshow } from '../components/slideshow';
 import { ScreenShot } from '../components/screenshot';
+import { Avatar } from '../components/avatar';
 import { ScreenShotDescription } from '../components/screenshot-description';
 import { PricingCard } from '../components/pricing-card';
-import { data, stores, NAVIGATION, HOST } from '../utils/constants';
+import { data, stores, contributors as listContributors, NAVIGATION, HOST } from '../utils/constants';
 
 const TITLE = 'Spotit - A music extension compatible with Spotify';
 const DESCRIPTION =
@@ -182,9 +183,10 @@ const Home: NextPage = () => {
               <strong className="bg-clip-text text-transparent bg-moss">{contributors.text}</strong>
             </div>
             <div className="flex flex-col text-lg text-center mt-10">
-              <div>Special thanks to amazing contributors 👏 👏 👏</div>
-              <div className="mt-5">
-
+              <div>Special thanks to amazing contributors</div>
+              <div>👏 👏 👏</div>
+              <div className="mt-5 flex justify-center flex-wrap space-x-2">
+                {listContributors.map((item) => <Avatar {...item} key={item.name} />)}
               </div>
             </div>
           </div>

@@ -19,7 +19,7 @@ export const PricingCard = (props: Props) => {
                 <span className="flex items-center justify-center lg:mb-5">
                   <img className="w-36 h-36 object-contain" src={src} alt={title} />
                 </span>
-                <div className="mt-5">
+                <div className="mt-5 flex flex-col">
                   <span className="text-3xl">{downloads}</span>
                   <i> downloads</i>
                 </div>
