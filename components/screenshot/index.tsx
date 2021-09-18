@@ -34,7 +34,7 @@ export const ScreenShot = (props: Props) => {
 
   let rightNode = (
     <div className={`md:flex-auto ${backgroundColor}`}>
-      <img src={imgSrc} alt={imgTitle} />
+      <img src={imgSrc} alt={imgTitle} loading="lazy" />
     </div>
   );
 

@@ -59,7 +59,10 @@ const Home: NextPage = () => {
                 <span className={`text-3xl text-${textColor}`}>extension</span>
               </div>
 
-              <a href="#installation" className={`${spotifyTextColor} shadow-md block px-7 text-white py-2 mt-6 rounded`}>
+              <a
+                href="#installation"
+                className={`${spotifyTextColor} shadow-md block px-7 text-white py-2 mt-6 rounded`}
+              >
                 Install
               </a>
             </div>
@@ -70,11 +73,7 @@ const Home: NextPage = () => {
               {data.map((item, index) => {
                 const { src, title } = item;
 
-                return (
-                  <div key={index} className="block">
-                    <img src={src} alt={title} />
-                  </div>
-                );
+                return <img src={src} alt={title} key={index} loading="lazy" />;
               })}
             </Slideshow>
           </div>
@@ -186,7 +185,9 @@ const Home: NextPage = () => {
               <div>Special thanks to amazing contributors</div>
               <div>👏 👏 👏</div>
               <div className="mt-5 flex justify-center flex-wrap space-x-2">
-                {listContributors.map((item) => <Avatar {...item} key={item.name} />)}
+                {listContributors.map((item) => (
+                  <Avatar {...item} key={item.name} />
+                ))}
               </div>
             </div>
           </div>
@@ -206,7 +207,6 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-
       </main>
       <Footer />
     </>

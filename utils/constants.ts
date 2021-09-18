@@ -22,11 +22,19 @@ interface StoreInfo {
 
 type Navigation = { [key in NavigationKey]: NavigationItem };
 
-type NavigationKey = 'motivation' | 'whatDoesItLookLike' | 'installation' | 'buyMeACoffee' | 'qr' | 'contributors';
+type NavigationKey =
+  | 'motivation'
+  | 'whatDoesItLookLike'
+  | 'installation'
+  | 'buyMeACoffee'
+  | 'qr'
+  | 'contributors'
+  | 'followMe';
 
 interface NavigationItem {
   text: string;
-  id: string;
+  id?: string;
+  href?: string;
 }
 
 export const HOST = 'https://spotify-extension.netlify.app';
@@ -159,7 +167,11 @@ export const NAVIGATION: Navigation = {
   contributors: {
     text: 'Contributors',
     id: 'contributors',
-  }
+  },
+  followMe: {
+    text: 'Follow me',
+    href: 'https://twitter.com/davidnguyen1791',
+  },
 };
 
 export const contributors = [
