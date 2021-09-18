@@ -22,18 +22,22 @@ const data = [
 ];
 
 export const Footer = () => {
+  const year = new Date().getFullYear();
   return (
-    <footer className="flex flex-col md:flex-row space-x-0 md:mx-64 md:space-x-5 mt-12 border-t border-gray-200 p-5 text-center">
-      {data.map((item) => {
-        const { href, text } = item;
-        return (
-          <div key={href}>
-            <a className="block p-1" href={href} target="_blank" rel="noreferrer">
-              {text}
-            </a>
-          </div>
-        );
-      })}
+    <footer className="md:mx-64 mt-12 border-t border-gray-200 p-5 text-center">
+      <div className="flex flex-col md:flex-row space-x-0 justify-center md:space-x-5">
+        {data.map((item) => {
+          const { href, text } = item;
+          return (
+            <div key={href}>
+              <a className="block p-1" href={href} target="_blank" rel="noreferrer">
+                {text}
+              </a>
+            </div>
+          );
+        })}
+      </div>
+      <div className="flex flex-col md:flex-row justify-center mt-1">© {year} Dzung Nguyen. All rights reserved.</div>
     </footer>
   );
 };
