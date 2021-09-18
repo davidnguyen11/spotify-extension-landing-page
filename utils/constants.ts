@@ -22,7 +22,7 @@ interface StoreInfo {
 
 type Navigation = { [key in NavigationKey]: NavigationItem };
 
-type NavigationKey = 'motivation' | 'whatDoesItLookLike' | 'installation' | 'buyMeACoffee';
+type NavigationKey = 'motivation' | 'whatDoesItLookLike' | 'installation' | 'buyMeACoffee' | 'qr' | 'contributors';
 
 interface NavigationItem {
   text: string;
@@ -152,4 +152,12 @@ export const NAVIGATION: Navigation = {
     text: 'Buy me a coffee',
     id: 'buy-me-a-coffee',
   },
+  qr: {
+    text: 'QR code',
+    id: 'qr',
+  },
+  contributors: {
+    text: 'Contributors',
+    id: 'contributors',
+  }
 };

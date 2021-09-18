@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Image from 'next/image'
 
 import { Header } from '../components/header';
 import { Footer } from '../components/footer';
@@ -15,7 +16,7 @@ const DESCRIPTION =
   'The Spotit is a music extension compatible with Spotify that allows the user seamlessly play/pause/like or jump to previous or next track while surfing the web without having to navigate to the Spotify user interface';
 const IMAGE = 'logo.png';
 
-const { motivation, whatDoesItLookLike, installation, buyMeACoffee } = NAVIGATION;
+const { motivation, whatDoesItLookLike, installation, buyMeACoffee, qr, contributors } = NAVIGATION;
 
 const Home: NextPage = () => {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -174,6 +175,36 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
+
+        <div className="flex flex-col items-center md:space-x-4 my-16 md:my-28">
+          <div className="md:max-w-screen-md px-4">
+            <div id={contributors.id} className={`text-center text-3xl md:text-4xl`}>
+              <strong className="bg-clip-text text-transparent bg-moss">{contributors.text}</strong>
+            </div>
+            <div className="flex flex-col text-lg text-center mt-10">
+              <div>Special thanks to amazing contributors 👏 👏 👏</div>
+              <div className="mt-5">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center md:space-x-4 my-16 md:my-28">
+          <div className="md:max-w-screen-md px-4">
+            <div id={qr.id} className={`text-center text-3xl md:text-4xl`}>
+              <strong className="bg-clip-text text-transparent bg-poncho">{qr.text}</strong>
+            </div>
+            <div className="flex flex-col text-lg text-center mt-10">
+              <div>You can tell your friends about this extension</div>
+              <div>by show them this 👇</div>
+              <div className="mt-5">
+                <Image src="/qr.png" alt="QR code" width="300" height="300" />
+              </div>
+            </div>
+          </div>
+        </div>
+
       </main>
       <Footer />
     </>

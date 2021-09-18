@@ -14,6 +14,8 @@ const colors = {
   pink1: 'linear-gradient(150deg, #e436ff, #ff5bae)',
   purple1: 'linear-gradient(150deg, #702bfc, #b730ff)',
   'deep-blue': 'linear-gradient(57deg, #1cafb3, #2390c5)',
+  poncho: 'linear-gradient(to right, #403a3e, #be5869)',
+  moss: 'linear-gradient(to right, #134e5e, #71b280);'
 
 }
 
