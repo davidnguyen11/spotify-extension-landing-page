@@ -72,6 +72,12 @@ Search song by name with Chrome's context menu
 
 <img width="546" alt="Screen Shot 2021-04-18 at 18 24 55" src="https://user-images.githubusercontent.com/6290720/115140690-86e88280-a073-11eb-8aeb-d24db2394320.png">
 
+## QR code
+
+Use this to tell your friends about this extension 👇
+
+<img src="public/qr.png" width="300" height=300>
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):

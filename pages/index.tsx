@@ -141,7 +141,7 @@ const Home: NextPage = () => {
             <div className="flex flex-col text-lg text-center mt-10">
               <div>I work so hard to make this product free for everyone.</div>
 
-              <div>If you like the product. Consider to donate me here: 😉</div>
+              <div>If you really enjoy the product. Please consider donating here: 😉</div>
 
               <div className="mt-5">
                 <a
@@ -199,8 +199,7 @@ const Home: NextPage = () => {
               <strong className="bg-clip-text text-transparent bg-poncho">{qr.text}</strong>
             </div>
             <div className="flex flex-col text-lg text-center mt-10">
-              <div>You can tell your friends about this extension</div>
-              <div>by show them this 👇</div>
+              <div>Use this to tell your friends about this extension 👇</div>
               <div className="mt-5">
                 <Image src="/qr.png" alt="QR code" width="300" height="300" />
               </div>
