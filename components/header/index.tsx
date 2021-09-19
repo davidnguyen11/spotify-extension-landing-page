@@ -164,11 +164,13 @@ export function Header(props: Props) {
             <div className="relative flex items-center justify-between h-16">
               <div className="flex-1 flex items-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
-                  <img
-                    className="ml-4 lg:block h-9 w-auto"
-                    src="/spotify-extension-64x64.png"
-                    alt="Spotify Exntesion"
-                  />
+                  <a href="/">
+                    <img
+                      className="ml-4 lg:block h-9 w-auto"
+                      src="/spotify-extension-64x64.png"
+                      alt="Spotify Exntesion"
+                    />
+                  </a>
                   <span className={`ml-4 font-bold text-lg text-${textColor}`}>Spotify Extension</span>
                 </div>
               </div>
