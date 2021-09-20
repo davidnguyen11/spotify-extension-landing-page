@@ -29,7 +29,9 @@ type NavigationKey =
   | 'buyMeACoffee'
   | 'qr'
   | 'contributors'
-  | 'followMe';
+  | 'followMe'
+  | 'privacyPolicy'
+  | 'contact';
 
 interface NavigationItem {
   text: string;
@@ -37,7 +39,7 @@ interface NavigationItem {
   href?: string;
 }
 
-export const HOST = 'https://spotify-extension.netlify.app';
+export const HOST = 'https://www.spotit.page';
 
 export const GA_TRACKING_ID = 'UA-147652451-2';
 
@@ -172,6 +174,12 @@ export const NAVIGATION: Navigation = {
     text: 'Follow me',
     href: 'https://twitter.com/davidnguyen1791',
   },
+  privacyPolicy: {
+    text: 'Privacy Policy',
+  },
+  contact: {
+    text: 'Contact',
+  },
 };
 
 export const contributors = [
@@ -211,3 +219,8 @@ export const contributors = [
     name: 'An Trinh',
   },
 ];
+
+export const META_DESCRIPTION =
+  'The Spotit is a music extension compatible with Spotify that allows the user seamlessly play/pause/like or jump to previous or next track while surfing the web without having to navigate to the Spotify user interface';
+
+export const LOGO = 'logo.png';

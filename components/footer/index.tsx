@@ -1,19 +1,19 @@
 const data = [
   {
-    href: 'https://www.linkedin.com/in/dzungnguyen179/',
-    text: 'Linkedin',
-  },
-  {
-    href: 'https://github.com/davidnguyen179',
-    text: 'Github',
+    href: '/',
+    text: 'Home',
   },
   {
     href: 'https://twitter.com/davidnguyen1791',
     text: 'Twitter',
   },
   {
-    href: 'https://www.paypal.com/paypalme/davidnguyen179',
-    text: 'Buy me a coffee ☕️',
+    href: '/privacy-policy',
+    text: 'Privacy Policy',
+  },
+  {
+    href: '/contact',
+    text: 'Contact',
   },
   {
     href: 'https://github.com/davidnguyen179/spotify-extension-landing-page/issues',
@@ -30,14 +30,14 @@ export const Footer = () => {
           const { href, text } = item;
           return (
             <div key={href}>
-              <a className="block p-1" href={href} target="_blank" rel="noreferrer">
+              <a className="block p-1" href={href}>
                 {text}
               </a>
             </div>
           );
         })}
       </div>
-      <div className="flex flex-col md:flex-row justify-center mt-1">© {year} Dzung Nguyen. All rights reserved.</div>
+      <div className="flex flex-col md:flex-row justify-center mt-2">© {year} Dzung Nguyen. All rights reserved.</div>
     </footer>
   );
 };

@@ -22,7 +22,7 @@ export function Header(props: Props) {
   const navigation = [
     {
       name: whatDoesItLookLike.text,
-      href: `#${whatDoesItLookLike.id}`,
+      href: `/#${whatDoesItLookLike.id}`,
       current: false,
       icon: (
         <svg style={svgStyle} className="inline-block mr-1" width={15} height={15} viewBox="0 0 24 24">
@@ -38,7 +38,7 @@ export function Header(props: Props) {
     },
     {
       name: installation.text,
-      href: `#${installation.id}`,
+      href: `/#${installation.id}`,
       current: false,
       icon: (
         <svg style={svgStyle} className="inline-block mr-1" width={15} height={15} viewBox="0 0 451.111 451.111">
@@ -49,7 +49,7 @@ export function Header(props: Props) {
     },
     {
       name: buyMeACoffee.text,
-      href: `#${buyMeACoffee.id}`,
+      href: `/#${buyMeACoffee.id}`,
       current: false,
       icon: (
         <svg
@@ -100,7 +100,7 @@ export function Header(props: Props) {
     },
     {
       name: contributors.text,
-      href: `#${contributors.id}`,
+      href: `/#${contributors.id}`,
       icon: (
         <svg style={svgStyle} className="inline-block mr-1" width={20} height={20} viewBox="0 0 512 512">
           <path d="M220.918,279.888A39.441,39.441,0,0,1,216,279.2v17.613a39.887,39.887,0,0,1,16,0V279.2A40.377,40.377,0,0,1,220.918,279.888Z" />
@@ -114,7 +114,7 @@ export function Header(props: Props) {
     },
     {
       name: qr.text,
-      href: `#${qr.id}`,
+      href: `/#${qr.id}`,
       icon: (
         <svg style={svgStyle} className="inline-block mr-1" width={15} height={15} viewBox="0 0 24 24">
           <path d="M17.25 0H6.75A2.752 2.752 0 0 0 4 2.75v18.5A2.752 2.752 0 0 0 6.75 24h10.5A2.752 2.752 0 0 0 20 21.25V2.75A2.752 2.752 0 0 0 17.25 0zM18 21a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h.5c.552 0 1 .448 1 1s.448 1 1 1h5c.552 0 1-.448 1-1s.448-1 1-1h.5a1 1 0 0 1 1 1z" />

@@ -15,8 +15,8 @@ const colors = {
   purple1: 'linear-gradient(150deg, #702bfc, #b730ff)',
   'deep-blue': 'linear-gradient(57deg, #1cafb3, #2390c5)',
   poncho: 'linear-gradient(to right, #403a3e, #be5869)',
-  moss: 'linear-gradient(to right, #134e5e, #71b280);'
-
+  moss: 'linear-gradient(to right, #134e5e, #71b280)',
+  kyeMeh: 'linear-gradient(to left, #8360c3, #2ebf91)'
 }
 
 module.exports = {

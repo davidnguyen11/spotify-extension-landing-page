@@ -4,18 +4,22 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 import { Header } from '../components/header';
-import { Footer } from '../components/footer';
 import { Slideshow } from '../components/slideshow';
 import { ScreenShot } from '../components/screenshot';
 import { Avatar } from '../components/avatar';
 import { ScreenShotDescription } from '../components/screenshot-description';
 import { PricingCard } from '../components/pricing-card';
-import { data, stores, contributors as listContributors, NAVIGATION, HOST } from '../utils/constants';
+import {
+  data,
+  stores,
+  contributors as listContributors,
+  NAVIGATION,
+  HOST,
+  META_DESCRIPTION,
+  LOGO,
+} from '../utils/constants';
 
 const TITLE = 'Spotit - A music extension compatible with Spotify';
-const DESCRIPTION =
-  'The Spotit is a music extension compatible with Spotify that allows the user seamlessly play/pause/like or jump to previous or next track while surfing the web without having to navigate to the Spotify user interface';
-const IMAGE = 'logo.png';
 
 const { motivation, whatDoesItLookLike, installation, buyMeACoffee, qr, contributors } = NAVIGATION;
 
@@ -37,16 +41,16 @@ const Home: NextPage = () => {
         <title>{TITLE}</title>
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <meta name="title" content={TITLE} />
-        <meta name="description" content={DESCRIPTION} />
+        <meta name="description" content={META_DESCRIPTION} />
 
         <meta property="og:url" content={HOST} />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={TITLE} />
-        <meta property="og:description" content={DESCRIPTION} />
-        <meta property="og:image" content={`${HOST}/${IMAGE}`} />
+        <meta property="og:description" content={META_DESCRIPTION} />
+        <meta property="og:image" content={`${HOST}/${LOGO}`} />
 
         <meta name="twitter:title" content={TITLE} />
-        <meta name="twitter:description" content={DESCRIPTION} />
+        <meta name="twitter:description" content={META_DESCRIPTION} />
       </Head>
       <Header bgColor={bgColor} textColor={textColor} />
       <main>
@@ -207,7 +211,6 @@ const Home: NextPage = () => {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 };
