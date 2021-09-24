@@ -38,7 +38,7 @@ const PrivacyPolicy: NextPage = () => {
               <strong className="bg-clip-text text-transparent bg-kyeMeh">{privacyPolicy.text}</strong>
             </div>
             <div className="text-lg mt-10">
-              Spotify Player Chrome Web Store & Mozilla Add-on Store & Microsoft Edge Add-on Store Privacy Policies.
+              Spotify Player Chrome Web Store, Mozilla Add-on Store, and Microsoft Edge Add-on Store Privacy Policies.
             </div>
             <div className="text-lg mt-10">
               <strong>I. Introduction</strong>
@@ -49,7 +49,7 @@ const PrivacyPolicy: NextPage = () => {
             </div>
 
             <div className="text-lg mt-7">
-              <strong>II. Information We Collect</strong>
+              <strong>II. Information it collects</strong>
               <ul className="list-decimal">
                 <li className="ml-10">It does not collect your data</li>
                 <li className="ml-10">It stores data only locally on your hard drive using localStorage API</li>
