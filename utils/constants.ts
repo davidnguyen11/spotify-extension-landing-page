@@ -45,8 +45,8 @@ export const GA_TRACKING_ID = 'UA-147652451-2';
 
 export const data: Data[] = [
   {
-    src: '/images/dew-kupla.png',
-    title: 'Dew - Kupla',
+    src: '/images/with-you-ngau-hung-hoaprox.png',
+    title: 'With You (Ngẫu Hứng) - Hoaprox',
     category: '🎶 Music',
     reverse: false,
     color: 'champagne',
