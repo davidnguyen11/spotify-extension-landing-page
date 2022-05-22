@@ -20,7 +20,18 @@ interface StoreInfo {
   downloads: string;
 }
 
+interface Payment {
+  logo: string;
+  qr: string;
+  title: string;
+  href: string;
+}
+
+export type BankName = 'momo' | 'techcombank' | 'tpbank';
+
 type Navigation = { [key in NavigationKey]: NavigationItem };
+
+type BankObject = { [key in BankName]: Payment };
 
 type NavigationKey =
   | 'motivation'
@@ -124,6 +135,29 @@ export const data: Data[] = [
   },
 ];
 
+export const banks: BankObject = {
+  momo: {
+    logo: '/payments/banks/momo.png',
+    qr: '/payments/qr/momo.jpeg',
+    title: 'Momo',
+    href: '/donation/momo',
+  },
+  techcombank: {
+    logo: '/payments/banks/techcombank.png',
+    qr: '/payments/qr/techcombank.jpeg',
+    title: 'Techcombank',
+    href: '/donation/techcombank',
+  },
+  tpbank: {
+    logo: '/payments/banks/tpbank.png',
+    qr: '/payments/qr/tpbank.jpeg',
+    title: 'TPBank',
+    href: '/donation/tpbank',
+  },
+};
+
+export const payments: Payment[] = [banks.momo, banks.techcombank, banks.tpbank];
+
 export const stores: StoreInfo[] = [
   {
     image: '/stores/chrome.png',
@@ -158,10 +192,6 @@ export const NAVIGATION: Navigation = {
     text: 'Installation',
     id: 'installation',
   },
-  buyMeACoffee: {
-    text: 'Buy me a coffee',
-    id: 'buy-me-a-coffee',
-  },
   qr: {
     text: 'QR code',
     id: 'qr',
@@ -179,6 +209,10 @@ export const NAVIGATION: Navigation = {
   },
   contact: {
     text: 'Contact',
+  },
+  buyMeACoffee: {
+    text: 'Buy me a coffee',
+    id: 'buy-me-a-coffee',
   },
 };
 
