@@ -27,7 +27,7 @@ interface Payment {
   href: string;
 }
 
-export type BankName = 'momo' | 'techcombank' | 'tpbank';
+export type BankName = 'momo' | 'techcombank' | 'tpbank' | 'paypay';
 
 type Navigation = { [key in NavigationKey]: NavigationItem };
 
@@ -154,8 +154,15 @@ export const banks: BankObject = {
     title: 'TPBank',
     href: '/donation/tpbank',
   },
+  paypay: {
+    logo: '/payments/banks/paypay.png',
+    qr: '/payments/qr/paypay.PNG',
+    title: 'PayPay',
+    href: '/donation/paypay',
+  },
 };
 
+export const jpPayments: Payment[] = [banks.paypay];
 export const payments: Payment[] = [banks.momo, banks.techcombank, banks.tpbank];
 
 export const stores: StoreInfo[] = [
