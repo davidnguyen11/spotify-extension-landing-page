@@ -182,7 +182,7 @@ export const stores: StoreInfo[] = [
     image: '/stores/edge.png',
     title: 'Edge',
     href: 'https://microsoftedge.microsoft.com/addons/detail/spotify-player/odplfjpibjdajlmaocmfmlcdidldlmnk',
-    downloads: '7k+',
+    downloads: '8k+',
   },
 ];
 
