@@ -170,7 +170,7 @@ export const stores: StoreInfo[] = [
     image: '/stores/chrome.png',
     title: 'Chrome',
     href: 'https://chrome.google.com/webstore/detail/spotify-player/bhdjjppbnlpjpeicimhemencfgjeldoa',
-    downloads: '60k+',
+    downloads: '70k+',
   },
   {
     image: '/stores/firefox.png',
