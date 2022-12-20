@@ -156,7 +156,7 @@ export const banks: BankObject = {
   },
   paypay: {
     logo: '/payments/banks/paypay.png',
-    qr: '/payments/qr/paypay.PNG',
+    qr: 'https://user-images.githubusercontent.com/6290720/208659347-8b857c21-6d25-4eb9-b051-01d808329318.png',
     title: 'PayPay',
     href: '/donation/paypay',
   },
