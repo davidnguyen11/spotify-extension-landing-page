@@ -170,7 +170,7 @@ export const stores: StoreInfo[] = [
     image: '/stores/chrome.png',
     title: 'Chrome',
     href: 'https://chrome.google.com/webstore/detail/spotify-player/bhdjjppbnlpjpeicimhemencfgjeldoa',
-    downloads: '70k+',
+    downloads: '80k+',
   },
   {
     image: '/stores/firefox.png',
@@ -182,7 +182,7 @@ export const stores: StoreInfo[] = [
     image: '/stores/edge.png',
     title: 'Edge',
     href: 'https://microsoftedge.microsoft.com/addons/detail/spotify-player/odplfjpibjdajlmaocmfmlcdidldlmnk',
-    downloads: '8k+',
+    downloads: '9k+',
   },
 ];
 
