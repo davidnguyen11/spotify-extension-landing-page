@@ -209,7 +209,7 @@ export const NAVIGATION: Navigation = {
   },
   followMe: {
     text: 'Follow me',
-    href: 'https://twitter.com/davidnguyen1791',
+    href: 'https://twitter.com/davidnguyen121',
   },
   privacyPolicy: {
     text: 'Privacy Policy',
