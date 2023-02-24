@@ -4,7 +4,7 @@ const data = [
     text: 'Home',
   },
   {
-    href: 'https://twitter.com/davidnguyen1791',
+    href: 'https://twitter.com/davidnguyen121',
     text: 'Twitter',
   },
   {
