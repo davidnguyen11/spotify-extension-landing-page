@@ -17,7 +17,9 @@ export type BackgroundColor =
   | 'evening'
   | 'purple'
   | 'deepSea'
-  | 'blush';
+  | 'blush'
+  | 'aurora'
+  | 'ubuntu';
 
 export const ScreenShot = (props: Props) => {
   const { imgSrc, imgTitle, children, reverse, bgColor } = props;

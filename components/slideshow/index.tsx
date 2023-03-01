@@ -39,7 +39,6 @@ export class Slideshow extends React.Component<Props, State> {
     const { children } = this.props;
 
     return (
-      <>
         <div className="overflow-hidden flex">
           {children.map((item, index) => {
             let display = 'opacity-0';
@@ -57,7 +56,6 @@ export class Slideshow extends React.Component<Props, State> {
             );
           })}
         </div>
-      </>
     );
   }
 }

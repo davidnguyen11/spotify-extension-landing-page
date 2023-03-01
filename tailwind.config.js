@@ -16,7 +16,9 @@ const colors = {
   'deep-blue': 'linear-gradient(57deg, #1cafb3, #2390c5)',
   poncho: 'linear-gradient(to right, #403a3e, #be5869)',
   moss: 'linear-gradient(to right, #134e5e, #71b280)',
-  kyeMeh: 'linear-gradient(to left, #8360c3, #2ebf91)'
+  kyeMeh: 'linear-gradient(to left, #8360c3, #2ebf91)',
+  aurora: 'linear-gradient(to right, #051937, #004d7a, #008793, #00bf72, #a8eb12);',
+  ubuntu: 'linear-gradient(to right, #6f8ebd, #7883b4, #8177a9, #896c9b, #8e618b);'
 }
 
 module.exports = {

@@ -55,7 +55,7 @@ const Home: NextPage = () => {
       </Head>
       <Header bgColor={bgColor} textColor={textColor} />
       <main>
-        <div className={`flex flex-col md:flex-row h-96 text-white ease-in-out duration-500 ${bgColor}`}>
+        <div className={`flex flex-col md:flex-row h-500px text-white ease-in-out duration-500 ${bgColor}`}>
           <div className="mt-10 md:mt-0 md:w-2/4 md:pr-4">
             <div className="font-bold flex flex-col justify-center items-center md:items-end h-full">
               <span className={`text-2xl text-${textColor}`}>Cross-browser</span>
@@ -90,13 +90,7 @@ const Home: NextPage = () => {
               <strong className="bg-clip-text text-transparent bg-night">{motivation.text}</strong>
             </div>
             <div className="text-lg mt-10">
-              When we are working or just browsing it is inconvenient to have to switch to another window to play/pause
-              or jump to previous tracks or forward to upcoming tracks. Also, we lose focus or get distracted once we
-              navigate away from our current window and open Spotify. With this simple extension we can eliminate the
-              need to navigate away from your current window to control Spotify. This extension has another nifty
-              feature. With a quick right click on the widget, you can search a song by name. So for example if you hear
-              a tune on Youtube you can quickly search it on Spotify without navigating away from your current window.
-              Then you can maybe add it to a playlist later.
+            It can be inconvenient to switch to another window when working or browsing to control Spotify, as it can cause distractions and loss of focus. However, with our simple extension, you can easily control Spotify without navigating away from your current window. Moreover, our extension includes a nifty feature - by right-clicking the widget, you can quickly search for a song by name. This way, you can seamlessly search for songs on Spotify while browsing other websites, allowing you to add them to your playlist at a later time.
             </div>
           </div>
         </div>
@@ -162,20 +156,6 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-
-        {/* <div className="flex flex-col items-center md:space-x-4 my-16 md:my-28">
-          <div className="md:max-w-screen-md px-4">
-            <div id={qr.id} className={`text-center text-3xl md:text-4xl`}>
-              <strong className="bg-clip-text text-transparent bg-poncho">{qr.text}</strong>
-            </div>
-            <div className="flex flex-col text-lg text-center mt-10">
-              <div>Use this to tell your friends about this extension 👇</div>
-              <div className="mt-5">
-                <Image src="/qr.png" alt="QR code" width="300" height="300" />
-              </div>
-            </div>
-          </div>
-        </div> */}
       </main>
     </>
   );
