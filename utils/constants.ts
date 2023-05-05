@@ -39,7 +39,6 @@ type NavigationKey =
   | 'installation'
   | 'buyMeACoffee'
   | 'qr'
-  | 'contributors'
   | 'followMe'
   | 'privacyPolicy'
   | 'contact';
@@ -93,7 +92,11 @@ export const data: Data[] = [
     color: 'ubuntu',
     spotifyTextColor: 'aurora',
     textColor: 'white',
-    text: ['Bigger UI with more features', 'Quickly copy a link to share with your friend', 'You can now play songs on shuffle'],
+    text: [
+      'Bigger UI with more features',
+      'Quickly copy a link to share with your friend',
+      'You can now play songs on shuffle',
+    ],
   },
   {
     src: '/images/coming-home-datmaniac.png',
@@ -222,10 +225,6 @@ export const NAVIGATION: Navigation = {
   qr: {
     text: 'QR code',
     id: 'qr',
-  },
-  contributors: {
-    text: 'Contributors',
-    id: 'contributors',
   },
   followMe: {
     text: 'Follow me',

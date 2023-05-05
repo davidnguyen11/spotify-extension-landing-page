@@ -39,23 +39,23 @@ export class Slideshow extends React.Component<Props, State> {
     const { children } = this.props;
 
     return (
-        <div className="overflow-hidden flex">
-          {children.map((item, index) => {
-            let display = 'opacity-0';
+      <div className="overflow-hidden flex">
+        {children.map((item, index) => {
+          let display = 'opacity-0';
 
-            if (this.state.selectedIndex === index) {
-              display = 'opacity-1';
-            }
+          if (this.state.selectedIndex === index) {
+            display = 'opacity-1';
+          }
 
-            const style = `flex justify-center items-center absolute min-h-full left-0 top-0 ease-in-out duration-500 ${display}`;
+          const style = `flex justify-center items-center absolute min-h-full left-0 top-0 ease-in-out duration-500 ${display}`;
 
-            return (
-              <div className={style} key={index}>
-                {item}
-              </div>
-            );
-          })}
-        </div>
+          return (
+            <div className={style} key={index}>
+              {item}
+            </div>
+          );
+        })}
+      </div>
     );
   }
 }

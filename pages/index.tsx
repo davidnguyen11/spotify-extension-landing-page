@@ -9,20 +9,12 @@ import { ScreenShot } from '../components/screenshot';
 import { Avatar } from '../components/avatar';
 import { ScreenShotDescription } from '../components/screenshot-description';
 import { PricingCard } from '../components/pricing-card';
-import {
-  data,
-  stores,
-  contributors as listContributors,
-  NAVIGATION,
-  HOST,
-  META_DESCRIPTION,
-  LOGO,
-} from '../utils/constants';
+import { data, stores, NAVIGATION, HOST, META_DESCRIPTION, LOGO } from '../utils/constants';
 import { Donation } from '../components/donation';
 
 const TITLE = 'Spotit - A music extension compatible with Spotify';
 
-const { motivation, whatDoesItLookLike, installation, buyMeACoffee, qr, contributors } = NAVIGATION;
+const { motivation, whatDoesItLookLike, installation, buyMeACoffee, qr } = NAVIGATION;
 
 const Home: NextPage = () => {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -90,7 +82,12 @@ const Home: NextPage = () => {
               <strong className="bg-clip-text text-transparent bg-night">{motivation.text}</strong>
             </div>
             <div className="text-lg mt-10">
-            It can be inconvenient to switch to another window when working or browsing to control Spotify, as it can cause distractions and loss of focus. However, with our simple extension, you can easily control Spotify without navigating away from your current window. Moreover, our extension includes a nifty feature - by right-clicking the widget, you can quickly search for a song by name. This way, you can seamlessly search for songs on Spotify while browsing other websites, allowing you to add them to your playlist at a later time.
+              It can be inconvenient to switch to another window when working or browsing to control Spotify, as it can
+              cause distractions and loss of focus. However, with our simple extension, you can easily control Spotify
+              without navigating away from your current window. Moreover, our extension includes a nifty feature - by
+              right-clicking the widget, you can quickly search for a song by name. This way, you can seamlessly search
+              for songs on Spotify while browsing other websites, allowing you to add them to your playlist at a later
+              time.
             </div>
           </div>
         </div>
@@ -103,7 +100,6 @@ const Home: NextPage = () => {
         </div>
 
         <Donation />
-        {/* <div className="md:max-w-screen-md px-4"> */}
         <div className="flex flex-col items-center md:space-x-4 mt-16 md:mt-28">
           <div id={whatDoesItLookLike.id} className={`text-center text-3xl md:text-4xl`}>
             <strong className="bg-clip-text text-transparent bg-pink1">{whatDoesItLookLike.text}</strong>
@@ -137,23 +133,6 @@ const Home: NextPage = () => {
               const { image, title, href, downloads } = item;
               return <PricingCard key={title} src={image} title={title} href={href} downloads={downloads} />;
             })}
-          </div>
-        </div>
-
-        <div className="flex flex-col items-center md:space-x-4 my-16 md:my-28">
-          <div className="md:max-w-screen-md px-4">
-            <div id={contributors.id} className={`text-center text-3xl md:text-4xl`}>
-              <strong className="bg-clip-text text-transparent bg-moss">{contributors.text}</strong>
-            </div>
-            <div className="flex flex-col text-lg text-center mt-10">
-              <div>Special thanks to amazing contributors</div>
-              <div>👏 👏 👏</div>
-              <div className="mt-5 flex justify-center flex-wrap space-x-2">
-                {listContributors.map((item) => (
-                  <Avatar {...item} key={item.name} />
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </main>

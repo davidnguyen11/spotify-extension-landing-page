@@ -39,36 +39,6 @@ export function Donation() {
           </a>
         </div>
       </div>
-
-      <div className="flex flex-col text-lg text-center mt-10">
-        <div className="flex justify-center items-center gap-x-1">
-          If you are in <span className="text-3xl">🇯🇵 🗼</span>
-        </div>
-      </div>
-
-      <div className="text-center mt-10">
-        <div className="flex flex-col justify-center md:flex-row md:space-x-5">
-          {jpPayments.map((item) => {
-            const { logo, title, href } = item;
-            return <PricingCard mode="donation" key={title} src={logo} title={title} href={href} />;
-          })}
-        </div>
-      </div>
-
-      <div className="flex flex-col text-center mt-10">
-        <div className="flex justify-center items-center gap-x-1">
-          Or <span className="text-3xl">🇻🇳</span>
-        </div>
-      </div>
-
-      <div className="text-center mt-10">
-        <div className="flex flex-col justify-center md:flex-row md:space-x-5">
-          {payments.map((item) => {
-            const { logo, title, href } = item;
-            return <PricingCard mode="donation" key={title} src={logo} title={title} href={href} />;
-          })}
-        </div>
-      </div>
     </>
   );
 }
