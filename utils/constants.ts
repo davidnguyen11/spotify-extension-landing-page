@@ -198,7 +198,7 @@ export const stores: StoreInfo[] = [
   {
     image: '/stores/firefox.png',
     title: 'Firefox',
-    href: 'https://addons.mozilla.org/en-US/firefox/addon/spotify-player/',
+    href: 'https://addons.mozilla.org/en-US/firefox/addon/spotit',
     downloads: '2k+',
   },
   {
