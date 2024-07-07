@@ -1,3 +1,5 @@
+import type { Config } from 'tailwindcss';
+
 const colors = {
   pink: 'linear-gradient(90deg, #fbe3e7 0%, #edd8e4 27%, #decbe2 100%)',
   metapolis: 'linear-gradient(to right, #659999, #f4791f)',
@@ -17,30 +19,28 @@ const colors = {
   poncho: 'linear-gradient(to right, #403a3e, #be5869)',
   moss: 'linear-gradient(to right, #134e5e, #71b280)',
   kyeMeh: 'linear-gradient(to left, #8360c3, #2ebf91)',
-  aurora: 'linear-gradient(to right, #051937, #004d7a, #008793, #00bf72, #a8eb12);',
-  ubuntu: 'linear-gradient(to right, #6f8ebd, #7883b4, #8177a9, #896c9b, #8e618b);'
-}
+  aurora: 'linear-gradient(to right, #051937, #004d7a, #008793, #00bf72, #a8eb12)',
+  ubuntu: 'linear-gradient(to right, #6f8ebd, #7883b4, #8177a9, #896c9b, #8e618b)',
+};
 
-module.exports = {
-  purge: [],
+const config: Config = {
+  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   darkMode: 'media',
   theme: {
-    extend: {},
-    textColor: (theme) => ({
+    textColor: ({ theme }) => ({
       ...theme('colors'),
       ...colors,
     }),
-    backgroundColor: (theme) => ({
+    backgroundColor: ({ theme }) => ({
       ...theme('colors'),
       'web-gold': 'rgba(255, 215, 0, 1)',
       'web-gold-900': 'rgb(255, 215, 0, 0.8)',
     }),
-    backgroundImage: {
-      ...colors
-    }
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
+};
+
+export default config;

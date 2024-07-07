@@ -1,20 +1,18 @@
+'use client';
 import { useState } from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
 
-import { Header } from '../components/header';
-import { Slideshow } from '../components/slideshow';
-import { ScreenShot } from '../components/screenshot';
-import { Avatar } from '../components/avatar';
-import { ScreenShotDescription } from '../components/screenshot-description';
-import { PricingCard } from '../components/pricing-card';
-import { data, stores, NAVIGATION, HOST, META_DESCRIPTION, LOGO } from '../utils/constants';
-import { Donation } from '../components/donation';
+import { Header } from '@/components/header';
+import { Slideshow } from '@/components/slideshow';
+import { ScreenShot } from '@/components/screenshot';
+import { ScreenShotDescription } from '@/components/screenshot-description';
+import { PricingCard } from '@/components/pricing-card';
+import { data, stores, NAVIGATION, HOST, META_DESCRIPTION, LOGO } from '@/utils/constants';
+import { Donation } from '@/components/donation';
 
-const TITLE = 'Spotit - A music extension compatible with Spotify';
 
-const { motivation, whatDoesItLookLike, installation, buyMeACoffee, qr } = NAVIGATION;
+const { motivation, whatDoesItLookLike, installation, buyMeACoffee } = NAVIGATION;
 
 const Home: NextPage = () => {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -30,21 +28,6 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <Head>
-        <title>{TITLE}</title>
-        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-        <meta name="title" content={TITLE} />
-        <meta name="description" content={META_DESCRIPTION} />
-
-        <meta property="og:url" content={HOST} />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={TITLE} />
-        <meta property="og:description" content={META_DESCRIPTION} />
-        <meta property="og:image" content={`${HOST}/${LOGO}`} />
-
-        <meta name="twitter:title" content={TITLE} />
-        <meta name="twitter:description" content={META_DESCRIPTION} />
-      </Head>
       <Header bgColor={bgColor} textColor={textColor} />
       <main>
         <div className={`flex flex-col md:flex-row h-500px text-white ease-in-out duration-500 ${bgColor}`}>

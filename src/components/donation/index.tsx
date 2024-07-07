@@ -1,6 +1,3 @@
-import { payments, jpPayments } from '../../utils/constants';
-import { PricingCard } from '../pricing-card';
-
 export function Donation() {
   return (
     <>

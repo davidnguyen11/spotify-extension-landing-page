@@ -16,7 +16,7 @@ const data = [
     text: 'Contact',
   },
   {
-    href: 'https://github.com/davidnguyen179/spotify-extension-landing-page/issues',
+    href: 'https://www.reddit.com/r/spotifyextension/',
     text: 'Bug report 🐞',
   },
 ];
