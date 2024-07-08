@@ -1,6 +1,7 @@
-import { Disclosure } from '@headlessui/react';
-import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import { NAVIGATION } from '../../utils/constants';
+'use client';
+import { Disclosure, DisclosureButton } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { NAVIGATION } from '@/utils/constants';
 
 interface Props {
   bgColor?: string;
@@ -13,7 +14,7 @@ function classNames(...classes: string[]) {
 
 export function Header(props: Props) {
   const { bgColor, textColor } = props;
-  const { whatDoesItLookLike, installation, buyMeACoffee, qr, followMe } = NAVIGATION;
+  const { whatDoesItLookLike, installation, buyMeACoffee, followMe } = NAVIGATION;
   const white = '#fff';
   const black = '#000';
 
@@ -157,17 +158,17 @@ export function Header(props: Props) {
               </div>
 
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white md:hidden">
+                <DisclosureButton className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white md:hidden">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XIcon className="block h-6 w-6" aria-hidden="true" />
+                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
-                    <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
                   )}
-                </Disclosure.Button>
+                </DisclosureButton>
 
                 <div className="hidden md:block md:ml-6">
-                  <div className="flex">
+                  <div className="flex gap-2">
                     {navigation.map((item) => {
                       let className = classNames(
                         textColor === 'white' ? 'hover:bg-gray-900' : 'hover:bg-gray-300',

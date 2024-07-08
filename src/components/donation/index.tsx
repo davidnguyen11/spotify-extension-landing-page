@@ -1,6 +1,3 @@
-import { payments, jpPayments } from '../../utils/constants';
-import { PricingCard } from '../pricing-card';
-
 export function Donation() {
   return (
     <>
@@ -11,7 +8,7 @@ export function Donation() {
 
         <div className="mt-5">
           <a
-            className="bg-web-gold hover:bg-web-gold-900 px-8 py-3 mt-5 rounded"
+            className="bg-web-gold hover:bg-web-gold-800 px-8 py-3 mt-5 rounded"
             target="_blank"
             rel="noreferrer"
             href="https://www.paypal.com/paypalme/davidnguyen179"
