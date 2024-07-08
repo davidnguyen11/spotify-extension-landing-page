@@ -11,7 +11,6 @@ import { PricingCard } from '@/components/pricing-card';
 import { data, stores, NAVIGATION, HOST, META_DESCRIPTION, LOGO } from '@/utils/constants';
 import { Donation } from '@/components/donation';
 
-
 const { motivation, whatDoesItLookLike, installation, buyMeACoffee } = NAVIGATION;
 
 const Home: NextPage = () => {
@@ -64,7 +63,7 @@ const Home: NextPage = () => {
             <div className={`text-center text-3xl md:text-4xl`}>
               <strong className="bg-clip-text text-transparent bg-night">{motivation.text}</strong>
             </div>
-            <div className="text-lg mt-10">
+            <div className="text-lg mt-10 text-black">
               It can be inconvenient to switch to another window when working or browsing to control Spotify, as it can
               cause distractions and loss of focus. However, with our simple extension, you can easily control Spotify
               without navigating away from your current window. Moreover, our extension includes a nifty feature - by

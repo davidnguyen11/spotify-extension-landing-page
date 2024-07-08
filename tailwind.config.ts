@@ -25,18 +25,7 @@ const colors = {
 
 const config: Config = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
-  darkMode: 'media',
-  theme: {
-    textColor: ({ theme }) => ({
-      ...theme('colors'),
-      ...colors,
-    }),
-    backgroundColor: ({ theme }) => ({
-      ...theme('colors'),
-      'web-gold': 'rgba(255, 215, 0, 1)',
-      'web-gold-900': 'rgb(255, 215, 0, 0.8)',
-    }),
-  },
+  theme: {},
   variants: {
     extend: {},
   },

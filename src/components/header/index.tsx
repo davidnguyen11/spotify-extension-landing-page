@@ -14,7 +14,7 @@ function classNames(...classes: string[]) {
 
 export function Header(props: Props) {
   const { bgColor, textColor } = props;
-  const { whatDoesItLookLike, installation, buyMeACoffee, qr, followMe } = NAVIGATION;
+  const { whatDoesItLookLike, installation, buyMeACoffee, followMe } = NAVIGATION;
   const white = '#fff';
   const black = '#000';
 
@@ -137,7 +137,6 @@ export function Header(props: Props) {
       ),
     },
   ];
-
 
   return (
     <Disclosure as="nav" className={`ease-in-out duration-500 ${bgColor}`}>

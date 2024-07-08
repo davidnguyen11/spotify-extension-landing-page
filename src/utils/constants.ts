@@ -242,44 +242,6 @@ export const NAVIGATION: Navigation = {
   },
 };
 
-export const contributors = [
-  {
-    href: 'https://www.dzungnguyen.dev',
-    img: 'https://avatars3.githubusercontent.com/u/6290720?v=4?s=100',
-    name: 'Dzung Nguyen',
-  },
-  {
-    href: 'https://benlee3.com',
-    img: 'https://avatars2.githubusercontent.com/u/35267414?v=4?s=100',
-    name: 'Ben Harned',
-  },
-  {
-    href: 'https://www.linkedin.com/in/khoado-dev/',
-    img: 'https://avatars2.githubusercontent.com/u/12934183?v=4?s=100',
-    name: 'Do Khoa',
-  },
-  {
-    href: 'https://github.com/immint023',
-    img: 'https://avatars1.githubusercontent.com/u/38607460?v=4?s=100',
-    name: 'Minh',
-  },
-  {
-    href: 'https://github.com/maxwellfortney',
-    img: 'https://avatars.githubusercontent.com/u/29241388?v=4?s=100',
-    name: 'Maxwell Fortney',
-  },
-  {
-    href: 'https://haoict.github.io/cydia/',
-    img: 'https://avatars.githubusercontent.com/u/7247750?v=4?s=100',
-    name: 'Hao Nguyen',
-  },
-  {
-    href: 'https://github.com/atrinh0',
-    img: 'https://avatars.githubusercontent.com/u/16542463?v=4?s=100',
-    name: 'An Trinh',
-  },
-];
-
 export const META_DESCRIPTION =
   'The Spotit is a music extension compatible with Spotify that allows the user seamlessly play/pause/like or jump to previous or next track while surfing the web without having to navigate to the Spotify user interface';
 

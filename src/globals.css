@@ -34,7 +34,6 @@ body {
 }
 
 /* Custom background colors */
-
 .bg-pink {
   background-image: var(--pink);
 }
@@ -83,16 +82,16 @@ body {
   background-image: var(--night);
 }
 
-.bg-deep-blue {
-  background-image: var(--deep-blue);
+.bg-pink1 {
+  background-image: var(--pink1);
 }
 
 .bg-purple1 {
   background-image: var(--purple1);
 }
 
-.bg-metapolis {
-  background-image: var(--metapolis);
+.bg-deep-blue {
+  background-image: var(--deep-blue);
 }
 
 .bg-poncho {
@@ -112,5 +111,95 @@ body {
 }
 
 .bg-ubuntu {
+  background-image: var(--ubuntu);
+}
+
+.bg-web-gold {
+  background-color: rgba(255, 215, 0, 1);
+}
+
+.bg-web-gold-800 {
+  background-color: rgb(255, 215, 0, 0.8);
+}
+
+/* Text color */
+
+.text-pink {
+  background-image: var(--pink);
+}
+
+.text-metapolis {
+  background-image: var(--metapolis);
+}
+
+.text-green {
+  background-image: var(--green);
+}
+
+.text-champagne {
+  background-image: var(--champagne);
+}
+
+.text-orange {
+  background-image: var(--orange);
+}
+
+.text-atlas {
+  background-image: var(--atlas);
+}
+
+.text-almost {
+  background-image: var(--almost);
+}
+
+.text-evening {
+  background-image: var(--evening);
+}
+
+.text-purple {
+  background-image: var(--purple);
+}
+
+.text-deepSea {
+  background-image: var(--deepSea);
+}
+
+.text-blush {
+  background-image: var(--blush);
+}
+
+.text-night {
+  background-image: var(--night);
+}
+
+.text-pink1 {
+  background-image: var(--pink1);
+}
+
+.text-purple1 {
+  background-image: var(--purple1);
+}
+
+.text-deep-blue {
+  background-image: var(--deep-blue);
+}
+
+.text-poncho {
+  background-image: var(--poncho);
+}
+
+.text-moss {
+  background-image: var(--moss);
+}
+
+.text-kyeMeh {
+  background-image: var(--kyeMeh);
+}
+
+.text-aurora {
+  background-image: var(--aurora);
+}
+
+.text-ubuntu {
   background-image: var(--ubuntu);
 }

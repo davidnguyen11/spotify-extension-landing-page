@@ -37,7 +37,7 @@ export const Footer = () => {
           );
         })}
       </div>
-      <div className="flex flex-col md:flex-row justify-center mt-2">© {year} Dzung Nguyen. All rights reserved.</div>
+      <div className="flex flex-col md:flex-row justify-center mt-2">© {year} David Nguyen. All rights reserved.</div>
     </footer>
   );
 };

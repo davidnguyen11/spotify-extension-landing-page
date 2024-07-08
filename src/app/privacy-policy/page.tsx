@@ -7,7 +7,7 @@ const { privacyPolicy } = NAVIGATION;
 
 export const metadata: Metadata = {
   title: 'Spotit - Privacy Policy',
-}
+};
 
 const PrivacyPolicy: NextPage = () => {
   const slideIndex = 1;
