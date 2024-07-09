@@ -29,6 +29,7 @@ export default function RootLayout({
       <body>
         {children}
         <Footer />
+        <script src={`https://cdn.jsdelivr.net/npm/@statsig/js-client@latest/build/statsig-js-client+session-replay+web-analytics.min.js?apikey=${process.env.STATSIG_CLIENT_KEY}`}></script>
       </body>
     </html>
   );
