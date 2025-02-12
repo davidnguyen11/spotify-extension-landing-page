@@ -139,9 +139,18 @@ export const data: Data[] = [
     text: ['Searching is so easy', 'Highlight a text', 'Right click and search'],
   },
   {
+    src: '/images/lyric.png',
+    title: '🎶 Lyric',
+    reverse: false,
+    color: 'moss',
+    spotifyTextColor: 'purple',
+    textColor: 'black',
+    text: ['Click the microphone icon on the player', 'Or select "🎶 Lyric" from the extension menu'],
+  },
+  {
     src: '/images/sign-in.png',
     title: 'Sign in',
-    reverse: false,
+    reverse: true,
     color: 'purple',
     spotifyTextColor: 'green',
     textColor: 'white',
@@ -150,7 +159,7 @@ export const data: Data[] = [
   {
     src: '/images/app-not-running.png',
     title: 'App not running',
-    reverse: true,
+    reverse: false,
     color: 'green',
     spotifyTextColor: 'blush',
     textColor: 'black',

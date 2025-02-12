@@ -97,7 +97,7 @@ const Home: NextPage = () => {
                 subHeading={title}
                 color={color}
                 postText={text}
-                alignText={reverse ? 'left' : 'right'}
+                alignText={reverse ? 'start' : 'end'}
               />
             </ScreenShot>
           );
